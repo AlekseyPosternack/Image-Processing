@@ -17,10 +17,9 @@ def main():
         print("1. Анализ данных")
         print("2. Обучить все модели")
         print("3. Сравнить модели")
-        print("4. Запуск веб-интерфейса")
-        print("5. Выход")
+        print("4. Выход")
         
-        choice = input("\nВведите номер (1-5): ").strip()
+        choice = input("\nВведите номер (1-4): ").strip()
         
         if choice == "1":
             analyzer = DataAnalyzer()
@@ -51,11 +50,6 @@ def main():
             results, best_model = comparator.compare_models()
             
         elif choice == "4":
-            print("\nЗапуск веб-интерфейса...")
-            print("http://localhost:5000")
-            os.system("python Course_work/app.py")
-            
-        elif choice == "5":
             print("Выход из программы")
             break
             
