@@ -8,9 +8,7 @@ from model_compare import ModelComparator
 from config import Config
 
 def main():
-    """Основная программа"""
-    print("🌍 EuroSAT Classifier")
-    print("=" * 50)
+    print("EuroSAT Classifier\n")
     
     os.makedirs(Config.MODELS_PATH, exist_ok=True)
     

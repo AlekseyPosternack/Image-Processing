@@ -312,6 +312,7 @@ HTML = '''
         </div>
 
         <div class="main-content">
+            <!-- Upload Panel -->
             <div class="upload-panel">
                 <h2 class="upload-title">Загрузите спутниковый снимок</h2>
                 <p class="upload-description">Загрузите изображение в формате JPG, PNG или JPEG для анализа</p>
@@ -477,7 +478,6 @@ HTML = '''
                 }
             });
 
-            // Create model cards
             Object.keys(models).forEach(modelKey => {
                 if (data.results[modelKey]) {
                     const result = data.results[modelKey];
